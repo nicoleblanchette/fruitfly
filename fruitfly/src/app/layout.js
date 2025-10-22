@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono, EB_Garamond as Garamond } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "./globalComponents/Navbar";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -12,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 const garamond = Garamond({
-	variable: "--font-geist-mono",
+	variable: "--font-garamond",
 	subsets: ["latin"],
 });
 
@@ -26,7 +27,8 @@ export default function RootLayout({ children }) {
 		<html lang='en'>
 			<body
 				className={`${garamond.variable} antialiased`}
-			>
+      >
+        <Navbar />
 				{children}
 			</body>
 		</html>

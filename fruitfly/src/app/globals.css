@@ -2,3 +2,7 @@
 @plugin "daisyui" {
 	themes: caramellatte --default, coffee --prefersdark;
 }
+
+:root {
+  font-family: --font-garamond;
+}
