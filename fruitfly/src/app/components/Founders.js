@@ -27,7 +27,7 @@ const foundersData = [
     by punk and rave culture, Naomi has developed a bold, personal style that informs both her performance and presence.`,
 	},
 	{
-		name: "Valentine Marie",
+		name: "Valentine Alvarado",
 		imgSrc: Valentine,
 		imgAlt: "",
 		bio: `Valentine is a Mexican multi-hyphenate artist born in San Diego and based in NYC. 
