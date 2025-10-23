@@ -20,8 +20,8 @@ const CastCard = ({ member }) => {
 export const Cast = () => {
 	return (
 		<div>
-			<h2>Cast</h2>
-			<ul className='flex flex-wrap'>
+			<h2 className="text-4xl">Cast</h2>
+			<ul className='flex flex-wrap justify-center'>
 				{castData.map(member => (
 					<CastCard key={member.name} member={member} />
 				))}

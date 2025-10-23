@@ -1,7 +1,7 @@
 export const About = () => {
 	return (
     <>
-      <h1>Fruit Fly Theatre Company</h1>
+      <h1 className="text-6xl">Fruit Fly Theatre Company</h1>
 			<p>
 				Fruit Fly Productions is a theater company that falls outside of the
 				mold in terms of progressive theater. Much of modern-day theater has

@@ -55,8 +55,8 @@ const FoundersCard = ({ founder }) => {
 export const Founders = () => {
 	return (
 		<div>
-			<h2>Founders</h2>
-			<ul className="flex">
+			<h2 className="text-4xl">Founders</h2>
+			<ul className="flex justify-center flex-wrap">
 				{foundersData.map(founder => (
 					<FoundersCard key={founder.name} founder={founder} />
 				))}

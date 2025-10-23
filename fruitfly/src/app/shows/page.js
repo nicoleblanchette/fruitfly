@@ -1,8 +1,10 @@
 import { Cast } from "./components/Cast";
+import { ShowDetails } from "./components/ShowDetails";
 
 export default function Shows() {
 	return (
-		<div>
+    <div>
+      <ShowDetails />
 			<Cast />
 		</div>
 	);
