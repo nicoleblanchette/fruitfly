@@ -10,7 +10,7 @@ export const ShowDetails = () => {
 			<div className='card-body'>
 				<h2 className='card-title'>The Wish</h2>
 				<p>
-					Join us for an evening of theatre with Fruit Fly Theatre's production!
+          {`Join us for an evening of theatre with Fruit Fly Theatre's production!
 					A collection of theatrical scenes that grapple with the impact of
 					radical social change. Blending humorous personal narratives,
 					movement, poetry, and... spells! The Wish explores the fragility of
@@ -20,7 +20,7 @@ export const ShowDetails = () => {
 					Specht. Dramaturgy by May Treuhaft-Ali and Fruit Fly Theatre co.
 					Script created with the support of New Georges and made possible by a
 					Clubbed Thumb Constitution Commission. Originally funded by Heidi
-					Schreck and the producers of "What the Constitution Means to Me."
+					Schreck and the producers of "What the Constitution Means to Me."`}
 				</p>
 				<div className='card-actions justify-end'>
 					<button className='btn btn-primary' ><a href="https://www.tickettailor.com/events/fruitflytheatre/1912653" target="_blank" rel="noreferrer noopener">Buy Tickets</a></button>
