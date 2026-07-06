@@ -1,8 +1,11 @@
+import { specialElite, napalm, inter } from "../layout";
+
 export const About = () => {
+
 	return (
-    <>
-      <h1 className="text-6xl">Fruit Fly Theatre Company</h1>
-			<p>
+    <div className="flex flex-col justify-center items-center">
+      <h1 className={`text-6xl ${napalm.className}`}>Fruit Fly Theatre Company</h1>
+      <p className={`flex justify-center items-center text-center text-xl mx-12 my-12 ${inter.className}`}>
 				Fruit Fly Productions is a theater company that falls outside of the
 				mold in terms of progressive theater. Much of modern-day theater has
 				struggled with falling into everyday trends and tropes, presenting
@@ -31,6 +34,6 @@ export const About = () => {
 				to be shared, and everyone deserves the chance to experience something
 				made by those who understand them.
 			</p>
-		</>
+		</div>
 	);
 };

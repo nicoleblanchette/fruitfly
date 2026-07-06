@@ -2,6 +2,7 @@ import Image from "next/image";
 import Valentina from "../media/valentina.jpg";
 import Naomi from "../media/naomi.jpg";
 import Valentine from "../media/valentine.jpg";
+import { napalm, inter } from "../layout";
 
 const foundersData = [
 	{
@@ -18,35 +19,29 @@ const foundersData = [
 		name: "Naomi Orange",
 		imgSrc: Naomi,
 		imgAlt: "",
-		bio: `Naomi Orange is an actor, singer, dancer and emerging producer/director based in \
-    New York City. A graduate of the Stella Adler Conservatory, she was born in London and
-    raised in New Zealand before spending her adolescence in Australia. There, she attended
-    the National School of Dance and graduated top of her class from the selective Hunter School
-    of the Performing Arts. Her credits include The Wolves (2), Carrie (Miss Gardner), Matilda (Miss Trunchbull)
-    and Cahoot’s Macbeth (Macbeth). She has also appeared in several short films and modeling projects. Influenced \
-    by punk and rave culture, Naomi has developed a bold, personal style that informs both her performance and presence.`,
+		bio: `Naomi Orange is an actor, singer, dancer and director based in New York City. A graduate of the Stella Adler Conservatory, she was born in London, raised in New Zealand and spent her adolescence in Australia, where she trained at the National College of Dance. before relocating to the US. Her theatre credits include Shiva and Wayne’s Gun with the New York Theatre Festival, The Wish (Claire), The Wolves (#2), Carrie (Miss Gardner), Matilda (Miss Trunchbull), and Cahoot’s Macbeth (Macbeth). She has also appeared in several short films and modeling campaigns. Influenced by punk and rave culture, Naomi has developed a bold, personal style that informs both her performance and presence.`,
 	},
 	{
 		name: "Valentine Alvarado",
 		imgSrc: Valentine,
 		imgAlt: "",
 		bio: `Valentine is a Mexican multi-hyphenate artist born in San Diego and based in NYC. 
-With roots in devising and classical styles they are excited to continue finding creative ways to explore storytelling with hopes to continue engaging in projects that connects with their latino culture. 
-Recent graduate of the Stella Adler Studio of Acting, Valentine also models at the International Center of Photography and appears in short films as well as music videos. 
-Selected credits include Lucha (LA LUCHA), Helena (A Midsummer Night’s Dream), Shylock (The Merchant of Venice), #13 (The Wolves) and Sue Snell (Carrie). 
-They are always dreaming of going back home to hug all the trees in Sequoia & surf the Golden Coast.`,
+ In 2023 they performed with the La Jolla Playhouse’s WOW Festival in Teatro Óptica’s immersive project La Lucha.
+Valentine began devising projects under the guide of Jenn Banda in 2018 with an emphasis on political issues such as the prison industrial complex. They’ve directed projects such as Reckless by Craig Lucas and various movement pieces. Alternatively Valentine can be found watching Rod Serling’s Twilight Zone. (They are also always scheming ways to land Guillermo Del Toro or Mike Flannegan’s next project)`,
 	},
 ];
 
 const FoundersCard = ({ founder }) => {
 	return (
 		<li className='card bg-base-100 w-96 shadow-sm m-6'>
-			<figure>
+			<figure className='h-6/12'>
 				<Image src={founder.imgSrc} alt={founder.imgAlt} />
 			</figure>
-			<div className='card-body'>
-				<h2 className='card-title'>{founder.name}</h2>
-				<p>{founder.bio}</p>
+			<div className='card-body flex flex-col justify-center items-center'>
+				<h3 className={`${napalm.className} text-4xl card-title`}>
+					{founder.name}
+				</h3>
+				<p className='text-center'>{founder.bio}</p>
 			</div>
 		</li>
 	);
@@ -54,9 +49,9 @@ const FoundersCard = ({ founder }) => {
 
 export const Founders = () => {
 	return (
-		<div>
-			<h2 className="text-4xl">Founders</h2>
-			<ul className="flex justify-center flex-wrap">
+		<div className='flex justify-center flex-col items-center'>
+			<h2 className={`text-4xl ${napalm.className}`}>Founders</h2>
+			<ul className={`flex justify-center flex-wrap ${inter.className}`}>
 				{foundersData.map(founder => (
 					<FoundersCard key={founder.name} founder={founder} />
 				))}

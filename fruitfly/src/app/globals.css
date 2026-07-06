@@ -1,8 +1,13 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-	themes: caramellatte --default, coffee --prefersdark;
+	themes: caramellatte --default, luxury --prefersdark;
 }
 
 :root {
-  font-family: --font-garamond;
+	font-family: --font-napalm;
 }
+
+h1 {
+  font-family: --font-special-elite;
+}
+

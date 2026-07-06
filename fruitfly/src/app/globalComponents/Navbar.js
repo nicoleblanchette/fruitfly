@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Logo from "../globalMedia/logo.png";
 import Link from "next/link";
+import { Noto_Sans_Psalter_Pahlavi, Special_Elite } from "next/font/google";
+import { specialElite,napalm } from "../layout";
 
 export const Navbar = () => {
 	return (
-		<div className='drawer'>
+    <div className={`drawer ${napalm.className} `}>
 			<input id='my-drawer-2' type='checkbox' className='drawer-toggle' />
 			<div className='drawer-content flex flex-col'>
 				{/* Navbar */}
@@ -40,10 +42,10 @@ export const Navbar = () => {
 						</div>
 					</div>
 					<div className='hidden flex-none lg:block'>
-						<ul className='menu menu-horizontal'>
+						<ul className={`menu menu-horizontal ${napalm.className}`}>
 							<li>
-								<Link className='text-2xl' href='/shows'>
-									Shows
+                <Link className={`text-2xl`} href='/shows'>
+									Productions
 								</Link>
 							</li>
 							<li>
@@ -63,7 +65,7 @@ export const Navbar = () => {
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									Instagram
+									Contact
 								</a>
 							</li>
 							{/* <li>
@@ -128,7 +130,7 @@ export const Navbar = () => {
 							target='_blank'
 							rel='noopener noreferrer'
 						>
-							Instagram
+							Contact
 						</a>
 					</li>
 				</ul>
