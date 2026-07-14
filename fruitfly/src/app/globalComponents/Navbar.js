@@ -1,12 +1,12 @@
 import Image from "next/image";
-import Logo from "../globalMedia/logo.png";
+import Logo from "../globalMedia/logo-transparent.png";
 import Link from "next/link";
 import { Noto_Sans_Psalter_Pahlavi, Special_Elite } from "next/font/google";
-import { specialElite,napalm } from "../layout";
+import { specialElite, napalm } from "../layout";
 
 export const Navbar = () => {
 	return (
-    <div className={`drawer ${napalm.className} `}>
+		<div className={`drawer ${napalm.className} `}>
 			<input id='my-drawer-2' type='checkbox' className='drawer-toggle' />
 			<div className='drawer-content flex flex-col'>
 				{/* Navbar */}
@@ -42,9 +42,11 @@ export const Navbar = () => {
 						</div>
 					</div>
 					<div className='hidden flex-none lg:block'>
-						<ul className={`menu menu-horizontal ${napalm.className}`}>
+						<ul
+							className={`menu menu-horizontal dropdown-content ${napalm.className}`}
+						>
 							<li>
-                <Link className={`text-2xl`} href='/shows'>
+								<Link className={`text-2xl`} href='/productions'>
 									Productions
 								</Link>
 							</li>
@@ -59,14 +61,29 @@ export const Navbar = () => {
 								</a>
 							</li>
 							<li>
-								<a
-									className='text-2xl'
-									href='https://www.instagram.com/fruitflytheatreco/'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									Contact
-								</a>
+								<details className="text-2xl">
+									<summary>Contact</summary>
+									<ul className='p-2 bg-base-100 w-40 z-1'>
+										<li>
+											<a
+												href='https://www.instagram.com/fruitflytheatreco/'
+												target='_blank'
+												rel='noopener noreferrer'
+											>
+												Instagram
+											</a>
+										</li>
+										<li>
+											<a
+												href='mailto:fruitflytheatreco@gmail.com'
+												target='_blank'
+												rel='noopener noreferrer'
+											>
+												Email
+											</a>
+										</li>
+									</ul>
+								</details>
 							</li>
 							{/* <li>
 								<label className='swap swap-rotate'>

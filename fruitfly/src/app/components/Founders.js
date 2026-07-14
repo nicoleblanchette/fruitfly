@@ -6,24 +6,23 @@ import { napalm, inter } from "../layout";
 
 const foundersData = [
 	{
-		name: "Valentina Avila",
+    name: "Valentina Avila",
+    role: "Co-Artistic Director",
 		imgSrc: Valentina,
 		imgAlt: "",
-		bio: `Valentina Avila is a Venezuelan actress. A recent graduate of Stella Adler Studio 
-    of Acting who also got her BFA from Central Michigan University on theatre. Some of her career
-    highlights have been performing in The Baby Shower (Sophie), Hamlet (Ophelia), and in The Wolves (#11).
-     She has directed shows like Lighting Martha, The Baltimore Waltz, as well as assisted Directed a production
-     of The Revolutionists. She is excited to have her directing debut here in New York amongst the wonderful cast and crew of The Wish!`,
+		bio: `Valentina is a Venezuelan actress, director and choreographer based in New York. She is an alumni of Stella Adler Studio of Acting and Central Michigan University. Some of her career highlights have been performing in La Casa de Bernarda Alba (Magdalena), The Baby Shower (Sophie), Hamlet (Ophelia), and in The Wolves (#11). She has directed shows like The Wish, Lighting Martha, The Baltimore Waltz, as well as assisted Directed a production of The Revolutionists.`,
 	},
 	{
-		name: "Naomi Orange",
+    name: "Naomi Orange",
+    role: "Co-Founder / Co-Artistic Director",
 		imgSrc: Naomi,
 		imgAlt: "",
 		bio: `Naomi Orange is an actor, singer, dancer and director based in New York City. A graduate of the Stella Adler Conservatory, she was born in London, raised in New Zealand and spent her adolescence in Australia, where she trained at the National College of Dance. before relocating to the US. Her theatre credits include Shiva and Wayne’s Gun with the New York Theatre Festival, The Wish (Claire), The Wolves (#2), Carrie (Miss Gardner), Matilda (Miss Trunchbull), and Cahoot’s Macbeth (Macbeth). She has also appeared in several short films and modeling campaigns. Influenced by punk and rave culture, Naomi has developed a bold, personal style that informs both her performance and presence.`,
 	},
 	{
-		name: "Valentine Alvarado",
-		imgSrc: Valentine,
+    name: "Valentine Alvarado",
+    role: "Co-Founder / Co-Artistic Director",
+    imgSrc: Valentine,
 		imgAlt: "",
 		bio: `Valentine is a Mexican multi-hyphenate artist born in San Diego and based in NYC. 
  In 2023 they performed with the La Jolla Playhouse’s WOW Festival in Teatro Óptica’s immersive project La Lucha.
