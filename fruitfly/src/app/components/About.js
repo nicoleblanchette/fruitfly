@@ -5,7 +5,7 @@ import Hero from "../media/hero.jpeg"
 export const About = () => {
 	return (
 		<div className='flex flex-col justify-center items-center'>
-			<h1 className={`text-6xl ${napalm.className}`}>
+			<h1 className={`text-6xl ${napalm.className} my-8`}>
 				Fruit Fly Theatre Company
       </h1>
       <Image src={Hero} alt=" "/>

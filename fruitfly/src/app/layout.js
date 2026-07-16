@@ -38,7 +38,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang='en'>
+		<html lang='en' data-theme='luxury'>
 			<body
 				className={`${garamond.variable} ${specialElite.variable} ${napalm.variable} ${inter.variable} antialiased  text-yellow-50`}
 			>
