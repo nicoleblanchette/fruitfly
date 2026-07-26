@@ -4,7 +4,7 @@ import { garamond, napalm } from "../../layout";
 
 const ProductionGallery = ({ production }) => {
 	return (
-		<ul className='columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>img:not(:first-child)]:mt-8'>
+		<ul className='columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>img:not(:first-child)]:mt-8 mx-8'>
 			{production.gallery.map((image, i) => {
 				return (
 					<li className='my-8' key={i}>
