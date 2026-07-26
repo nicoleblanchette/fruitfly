@@ -2,6 +2,12 @@
 @plugin "daisyui" {
 	themes: luxury;
 }
+@plugin "daisyui/theme" {
+  name: "luxury";
+  --radius-selector: 0rem;
+  --radius-field: 0rem;
+  --radius-box: 0rem;
+}
 
 :root {
 	font-family: --font-napalm;

@@ -1,18 +1,27 @@
 import {
 	Geist,
 	Geist_Mono,
-	EB_Garamond as Garamond,
+	Cormorant_Garamond as Garamond,
 	Special_Elite,
-	Inter,
+  Inter,
+  Alegreya,
+  Hind_Madurai
 } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "./globalComponents/Navbar";
+import Footer from "./globalComponents/Footer";
 
-const garamond = Garamond({
+export const garamond = Garamond({
 	variable: "--font-garamond",
 	subsets: ["latin"],
 });
+
+export const madurai = Hind_Madurai({
+  variable: "--font-madurai",
+  subsets: ["latin"],
+  weight: "400"
+})
 
 export const inter = Inter({
 	variable: "--font-inter",
@@ -43,7 +52,8 @@ export default function RootLayout({ children }) {
 				className={`${garamond.variable} ${specialElite.variable} ${napalm.variable} ${inter.variable} antialiased  text-yellow-50`}
 			>
 				<Navbar />
-				{children}
+        {children}
+        <Footer />
 			</body>
 		</html>
 	);

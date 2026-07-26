@@ -1,5 +1,6 @@
 import { productionData } from "../productionData";
 import Image from "next/image";
+import { garamond, napalm } from "../../layout";
 
 const ProductionGallery = ({ production }) => {
 	return (
@@ -19,8 +20,8 @@ export default async function Production({ params }) {
 	const { id } = await params;
 	const production = productionData.find(data => data.id === id);
 	return (
-		<div className='flex flex-col items-center'>
-			<h1>{production.title}</h1>
+    <div className={`flex flex-col items-center`}>
+      <h1 className={`text-6xl my-12 ${garamond.className}`}>{production.title}</h1>
 			<ProductionGallery production={production} />
 		</div>
 	);

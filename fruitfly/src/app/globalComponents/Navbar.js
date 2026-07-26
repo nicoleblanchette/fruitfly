@@ -2,11 +2,11 @@ import Image from "next/image";
 import Logo from "../globalMedia/logo-transparent.png";
 import Link from "next/link";
 import { Noto_Sans_Psalter_Pahlavi, Special_Elite } from "next/font/google";
-import { specialElite, napalm } from "../layout";
+import { specialElite, napalm, garamond } from "../layout";
 
 export const Navbar = () => {
 	return (
-		<div className={`drawer ${napalm.className} `}>
+		<div className={`drawer ${garamond.className}  `}>
 			<input id='my-drawer-2' type='checkbox' className='drawer-toggle' />
 			<div className='drawer-content flex flex-col'>
 				{/* Navbar */}
@@ -36,14 +36,17 @@ export const Navbar = () => {
 					<div className='mx-2 flex-1 px-2'>
 						<div className='flex'>
 							<Image width={36} src={Logo} alt='' />
-							<Link className='btn btn-ghost text-2xl' href={"/"}>
-								Fruit Fly Theatre Co
+							<Link
+								className='btn btn-ghost text-2xl  text-yellow-50 font-medium italic'
+								href={"/"}
+							>
+								Fruit Fly Theatre Company
 							</Link>
 						</div>
 					</div>
 					<div className='hidden flex-none lg:block'>
 						<ul
-							className={`menu menu-horizontal dropdown-content ${napalm.className}`}
+							className={`menu menu-horizontal dropdown-content ${garamond.className}`}
 						>
 							<li>
 								<Link className={`text-2xl`} href='/productions'>
