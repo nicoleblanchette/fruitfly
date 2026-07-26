@@ -37,7 +37,7 @@ const FoundersCard = ({ founder }) => {
 				<Image src={founder.imgSrc} alt={founder.imgAlt} />
 			</figure>
       <div className='card-body flex flex-col justify-center items-center'>
-        <div className="divider"></div>
+        <div className="divider divider-neutral"></div>
 				<h3 className={`${garamond.className} text-4xl card-title`}>
 					{founder.name}
 				</h3>

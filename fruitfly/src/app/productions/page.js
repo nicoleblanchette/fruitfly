@@ -13,7 +13,7 @@ const ProductionCard = ({ production }) => {
 			</figure>
 
 			<div className='card-body inline px-0'>
-				<div className='divider'></div>
+				<div className='divider divider-neutral'></div>
 				<h3 className={`${garamond.className} text-4xl card-title font-bold`}>
 					{production.title}
 				</h3>
